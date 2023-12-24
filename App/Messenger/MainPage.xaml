@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Messenger.MainPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Label x:Name="LoginLabel" Text="Login" FontSize="20"/>
+        <Entry x:Name="LoginEntry" Placeholder="Enter login" FontSize="20" Margin="5"/>
+
+        <Label Text="Password" FontSize="20"/>
+        <StackLayout Orientation="Horizontal" Margin="5">
+            <Entry x:Name="PasswordEntry" Placeholder="Enter password" IsPassword="True" FontSize="20" Margin="5"/>
+            <Button Text="👁️" Clicked="ShowPasswordButton_Clicked" BackgroundColor="Transparent"/>
+        </StackLayout>
+
+        <Button x:Name="LoginButton" Text="Log in" Clicked="LoginButton_Click" FontSize="20" Margin="5"/>
+        <Button x:Name="RegisterButton" Text="Register" Clicked="RegisterButton_Click" FontSize="12" Margin="10"/>
+    </StackLayout>
+
+</ContentPage>

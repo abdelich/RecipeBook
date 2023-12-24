@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:Messenger.ViewModel"
+             x:DataType="viewmodel:RecipeAddViewModel"
+             x:Class="Messenger.ReceiptAdd"
+             Title="Add Recipe">
+
+    <ScrollView>
+        <StackLayout Margin="20" Spacing="15">
+            <Label Text="Recipe Details" FontSize="20" FontAttributes="Bold" />
+
+            <Frame>
+                <Entry Placeholder="Name" x:Name="NameEntry" FontSize="16" Text="{Binding RecipeName, Mode=TwoWay}" />
+            </Frame>
+
+            <Frame>
+                <Entry Placeholder="Description" x:Name="DescriptionEntry" FontSize="16" Text="{Binding RecipeDescription, Mode=TwoWay}" />
+            </Frame>
+
+            <Frame>
+                <Entry Placeholder="Photo URL" x:Name="PhotoUrlEntry" FontSize="16" Text="{Binding RecipePhotoUrl, Mode=TwoWay}" />
+            </Frame>
+
+            <Label Text="Ingredients" FontSize="20" FontAttributes="Bold" />
+
+            <StackLayout>
+                <Frame>
+                    <Entry Placeholder="Ingredient" x:Name="IngredientNameEntry" FontSize="16" Text="{Binding IngredientName, Mode=TwoWay}" />
+                </Frame>
+
+                <Frame>
+                    <Entry Placeholder="Amount" x:Name="IngredientQuantityEntry" FontSize="16" Text="{Binding IngredientQuantity, Mode=TwoWay}" />
+                </Frame>
+
+                <Button Text="Add" FontSize="20" Command="{Binding AddIngredientCommand}" />
+
+                <Label Text="Selected Ingredients:" FontSize="18" />
+
+                <ListView ItemsSource="{Binding Ingredients}" SeparatorVisibility="Default" RowHeight="40">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+
+            <Label Text="Cooking Instructions:" FontSize="18" />
+
+            <Frame>
+                <Editor Placeholder="Enter cooking instructions..." x:Name="CookingInstructionsEditor" HeightRequest="100" FontSize="16" Text="{Binding RecipeCookingInstructions, Mode=TwoWay}" />
+            </Frame>
+
+            <Button Text="Add Recipe" FontSize="20" Command="{Binding AddRecipeCommand}" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

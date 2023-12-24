@@ -1,0 +1,1 @@
+R:\NURE\3\MD\App\Messenger\Messenger.csproj;x64

@@ -1,0 +1,9 @@
+GET
+curl -X GET http://127.0.0.1:5000/api/users
+curl -X GET http://127.0.0.1:5000/api/user_info/<user_id>
+curl -X GET http://127.0.0.1:5000/api/receipts
+
+POST
+curl -X POST http://127.0.0.1:5000/api/user_create/<login>/<password>
+curl -X POST http://127.0.0.1:5000/api/user_login/<login>/<password>
+curl -X POST http://127.0.0.1:5000/api/receipt

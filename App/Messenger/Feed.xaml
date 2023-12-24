@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Messenger.Feed"
+             Title="Feed"
+             xmlns:viewmodel ="clr-namespace:Messenger.ViewModel"
+             x:DataType="viewmodel:Receipt">
+
+    <Grid RowDefinitions="100, Auto, *"
+          ColumnDefinitions=".75*, .25*">
+        <Label Grid.ColumnSpan="2"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               Text="Receipts"
+               FontSize="40"
+               BackgroundColor="AntiqueWhite"
+               x:Name="l"/>
+        <Button Text="Reload"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                BackgroundColor="Black"
+                Grid.Row="0"
+                Margin="15"
+                Grid.ColumnSpan="1"
+                Clicked="Reload_Receipts"/>
+        <Button Text="Add"
+                HorizontalOptions="End"
+                VerticalOptions="Center"
+                BackgroundColor="Black"
+                Grid.Row="0"
+                Margin="15"
+                Grid.ColumnSpan="2"
+                Clicked="Add_Receipt"/>
+        <CollectionView Grid.Row="2" Grid.ColumnSpan="2" Margin="0,15,0,0"
+                        ItemsSource="{Binding Receipts}"
+                        SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="viewmodel:Receipt">
+                    <Grid Padding="0,5">
+                        <Frame Margin="3,0,5,3" BorderColor="Black">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Check_DetailsCommand}" CommandParameter="{Binding .}"/>
+                            </Frame.GestureRecognizers>
+                            <HorizontalStackLayout>
+                                <Image HeightRequest="100" WidthRequest="100" Aspect="AspectFill" Source="{Binding Photo_URL}"/>
+                                <VerticalStackLayout Margin="20,0,0,0" VerticalOptions="Center">
+                                    <Label Text="{Binding Name}" FontSize="26" VerticalTextAlignment="Start" LineBreakMode="WordWrap"/>
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

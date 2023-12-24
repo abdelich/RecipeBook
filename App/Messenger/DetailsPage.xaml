@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Messenger.DetailsPage"
+             xmlns:viewmodel="clr-namespace:Messenger.ViewModel"
+             x:DataType="viewmodel:DetailsViewModel"
+             BackgroundColor="#F2F2F2">
+
+    <ScrollView Margin="20">
+        <StackLayout Spacing="10" Padding="20" Margin="0,10,0,10">
+            <Image Source="{Binding Receipt.Photo_URL}" HeightRequest="200" Aspect="AspectFill" />
+
+            <Label Text="{Binding Receipt.Name}" FontSize="24" FontAttributes="Bold" />
+
+            <Label Text="{Binding Receipt.Description}" TextColor="Gray" FontSize="16" />
+
+            <Label Text="Ingredients" FontSize="20" FontAttributes="Bold" />
+
+            <ListView ItemsSource="{Binding Receipt.Ingredients}"
+                      SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="10,0">
+                                <Label Text="{Binding .}" FontSize="16" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Label Text="Cooking Instructions" FontSize="20" FontAttributes="Bold" />
+
+            <Label Text="{Binding Receipt.Cooking}" FontSize="16" TextColor="Gray" />
+
+            <Label Text="Author" FontSize="20" FontAttributes="Bold" />
+
+            <Label Text="{Binding Receipt.Author}" FontSize="16" TextColor="Gray" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
