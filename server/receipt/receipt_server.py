@@ -7,10 +7,12 @@ app = Flask(__name__)
 users = []
 receipts = []
 
+
 @app.route('/api/users', methods=['GET'])
 def get_users():
     print('get_users')
     return jsonify([user.get_user() for user in users])
+
 
 @app.route('/api/receipts', methods=['GET'])
 def get_receipts():
@@ -18,6 +20,7 @@ def get_receipts():
     for dish in receipts:
         print(dish.ingredients)
     return jsonify([dish.get_receipt() for dish in receipts])
+
 
 @app.route('/api/user_info/<user_id>', methods=['GET'])
 def get_user_info(user_id):
@@ -27,7 +30,8 @@ def get_user_info(user_id):
             return jsonify(user.get_user())
     abort(404, description=f"User with ID '{user_id}' not found")
 
-#create user -> user = {user_id, user_password, user_nickname}
+
+# create user -> user = {user_id, user_password, user_nickname}
 @app.route('/api/user_create/<login>/<password>', methods=['POST'])
 def user_create(login, password):
     print('user_create')
@@ -49,6 +53,7 @@ def user_create(login, password):
     users.append(new_user)
     return jsonify(new_user.get_user())
 
+
 @app.route('/api/user_login/<login>/<password>', methods=['POST'])
 def user_login(login, password):
     print('user_login')
@@ -63,6 +68,7 @@ def user_login(login, password):
             abort(404, description="Incorrect password")
         
     abort(404, description=f"User with '{login}' login not found")
+
 
 @app.route('/api/receipt', methods=['POST'])
 def send_receipt():
@@ -94,11 +100,13 @@ def shutdown_server():
     if func is None:
         raise RuntimeError('Not running with the Werkzeug Server')
     func()
-    
+
+
 @app.get('/shutdown')
 def shutdown():
     shutdown_server()
     return 'Server shutting down...'
+
 
 if __name__ == '__main__':
     app.run(debug=True)
