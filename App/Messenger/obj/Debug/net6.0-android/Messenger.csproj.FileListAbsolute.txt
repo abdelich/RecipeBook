@@ -959,3 +959,5 @@ R:\NURE\3\MD\App\Messenger\obj\Debug\net6.0-android\android\assets\System.dll
 R:\NURE\3\MD\App\Messenger\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
 R:\NURE\3\MD\App\Messenger\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
 R:\NURE\3\MD\App\Messenger\obj\Debug\net6.0-android\android\assets\System.Xml.dll
+C:\Mine\Study\NURE\DevOps\PZ1\RecipeBook\App\Messenger\obj\Debug\net6.0-android\Messenger.dll
+C:\Mine\Study\NURE\DevOps\PZ1\RecipeBook\App\Messenger\obj\Debug\net6.0-android\Messenger.pdb
