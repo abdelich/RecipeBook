@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Messenger</name>
+    </assembly>
+    <members>
+        <member name="T:Messenger.ViewModel.DetailsViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:Messenger.ViewModel.DetailsViewModel.Receipt">
+            <inheritdoc cref="F:Messenger.ViewModel.DetailsViewModel.receipt"/>
+        </member>
+        <member name="T:Messenger.ViewModel.Receipt">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Messenger.ViewModel.Receipt.Receipts">
+            <inheritdoc cref="F:Messenger.ViewModel.Receipt.receipts"/>
+        </member>
+        <member name="F:Messenger.ViewModel.Receipt.addCommand">
+            <summary>The backing field for <see cref="P:Messenger.ViewModel.Receipt.AddCommand"/>.</summary>
+        </member>
+        <member name="P:Messenger.ViewModel.Receipt.AddCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Messenger.ViewModel.Receipt.Add"/>.</summary>
+        </member>
+        <member name="F:Messenger.ViewModel.Receipt.check_DetailsCommand">
+            <summary>The backing field for <see cref="P:Messenger.ViewModel.Receipt.Check_DetailsCommand"/>.</summary>
+        </member>
+        <member name="P:Messenger.ViewModel.Receipt.Check_DetailsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Messenger.ViewModel.Receipt.Check_Details(Messenger.ViewModel.Receipt)"/>.</summary>
+        </member>
+        <member name="T:Messenger.ViewModel.RecipeAddViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:Messenger.ViewModel.RecipeAddViewModel.Ingredients">
+            <inheritdoc cref="F:Messenger.ViewModel.RecipeAddViewModel.ingredients"/>
+        </member>
+        <member name="T:Messenger.ViewModel.ReceiptsViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Messenger.ViewModel.ReceiptsViewModel.Receipts">
+            <inheritdoc cref="F:Messenger.ViewModel.ReceiptsViewModel.receipts"/>
+        </member>
+        <member name="P:Messenger.ViewModel.ReceiptsViewModel.Receipt_name">
+            <inheritdoc cref="F:Messenger.ViewModel.ReceiptsViewModel.receipt_name"/>
+        </member>
+        <member name="P:Messenger.ViewModel.ReceiptsViewModel.Receipt_description">
+            <inheritdoc cref="F:Messenger.ViewModel.ReceiptsViewModel.receipt_description"/>
+        </member>
+        <member name="P:Messenger.ViewModel.ReceiptsViewModel.Receipt_author">
+            <inheritdoc cref="F:Messenger.ViewModel.ReceiptsViewModel.receipt_author"/>
+        </member>
+        <member name="P:Messenger.ViewModel.ReceiptsViewModel.Receipt_cooking">
+            <inheritdoc cref="F:Messenger.ViewModel.ReceiptsViewModel.receipt_cooking"/>
+        </member>
+        <member name="P:Messenger.ViewModel.ReceiptsViewModel.Receipt_photo">
+            <inheritdoc cref="F:Messenger.ViewModel.ReceiptsViewModel.receipt_photo"/>
+        </member>
+        <member name="P:Messenger.ViewModel.ReceiptsViewModel.Recepient_ingredients">
+            <inheritdoc cref="F:Messenger.ViewModel.ReceiptsViewModel.recepient_ingredients"/>
+        </member>
+        <member name="F:Messenger.ViewModel.ReceiptsViewModel.addCommand">
+            <summary>The backing field for <see cref="P:Messenger.ViewModel.ReceiptsViewModel.AddCommand"/>.</summary>
+        </member>
+        <member name="P:Messenger.ViewModel.ReceiptsViewModel.AddCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Messenger.ViewModel.ReceiptsViewModel.Add"/>.</summary>
+        </member>
+        <member name="F:Messenger.ViewModel.ReceiptsViewModel.check_DetailsCommand">
+            <summary>The backing field for <see cref="P:Messenger.ViewModel.ReceiptsViewModel.Check_DetailsCommand"/>.</summary>
+        </member>
+        <member name="P:Messenger.ViewModel.ReceiptsViewModel.Check_DetailsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Messenger.ViewModel.ReceiptsViewModel.Check_Details(Messenger.ViewModel.Receipt)"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Receipt">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Receipt" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Receipts">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Receipts" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Ingredients">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Ingredients" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Receipt_name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Receipt_name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Receipt_description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Receipt_description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Receipt_author">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Receipt_author" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Receipt_cooking">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Receipt_cooking" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Receipt_photo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Receipt_photo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Recepient_ingredients">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Recepient_ingredients" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Receipt">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Receipt" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Receipts">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Receipts" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Ingredients">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Ingredients" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Receipt_name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Receipt_name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Receipt_description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Receipt_description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Receipt_author">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Receipt_author" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Receipt_cooking">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Receipt_cooking" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Receipt_photo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Receipt_photo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Recepient_ingredients">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Recepient_ingredients" generated properties.</summary>
+        </member>
+    </members>
+</doc>

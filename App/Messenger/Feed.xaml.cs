@@ -9,7 +9,7 @@ namespace Messenger;
 
 public partial class Feed : ContentPage
 {
-    string url = "http://127.0.0.1:5000";
+    string url = "http://192.168.1.156:5000";
     string post = "/api/receipts";
 
     List<Receipt> receipts = new List<Receipt>();

@@ -9,7 +9,7 @@ namespace Messenger.ViewModel
 {
     public partial class RecipeAddViewModel : ObservableObject
     {
-        string url = "http://127.0.0.1:5000";
+        string url = "http://192.168.1.156:5000";
         string post = "/api/receipt";
 
         private string _recipeName;
